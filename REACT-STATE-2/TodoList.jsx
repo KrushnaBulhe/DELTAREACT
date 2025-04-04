@@ -65,13 +65,12 @@ export default function TodoList() {
     );
   };
 
-
   let AllDone = () => {
     setTodos((prevTodos) =>
       prevTodos.map((todo) => {
         return {
           ...todo,
-          isDone:true,
+          isDone: true,
         };
       })
     );
@@ -86,11 +85,9 @@ export default function TodoList() {
       ></input>
       <br />
       <br />
-
       <button onClick={addNewTodo}>Add Task</button>
       <br />
       <br />
-
       <hr></hr>
       <h4>Tasks to do</h4>
       <ul>
